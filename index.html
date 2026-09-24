@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pace Aide Informatique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Pace Aide Informatique</h1>
+
+        <p>Le numerique plus simple au quotidien</p>
+
+        <button id="retour-accueil" class="bouton-accueil">
+            Accueil
+        </button>
+
+    </header>
+    <main>
+
+        <section>
+
+            <h2>Comment pouvons-nous vous aider ?</h2>
+
+            <div class="boutons-principaux">
+
+                <button id="probleme-informatique">
+                    J'ai un probleme informatique
+                </button>
+
+                <button id="demarche">
+                    J'ai besoin d'aide pour une demarche
+                </button>
+
+                <button id="apprendre">
+                    Je veux apprendre
+                </button>
+
+                <button id="signaler">
+                    Je veux signaler un probleme
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROBLEME INFORMATIQUE -->
+
+        <section id="zone-informatique" class="zone-cachee">
+
+            <h2>Quel probleme rencontrez-vous ?</h2>
+
+            <div class="choix-secondaires">
+
+                <button data-conseil="wifi">
+                    Internet / Wi-Fi
+                </button>
+
+                <button data-conseil="ordinateur">
+                    Ordinateur
+                </button>
+
+                <button data-conseil="smartphone">
+                    Smartphone / tablette
+                </button>
+
+                <button data-conseil="email">
+                    E-mail
+                </button>
+
+                <button data-conseil="motdepasse">
+                    Mot de passe
+                </button>
+
+                <button data-conseil="suspect">
+                    Message ou site suspect
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- AIDE POUR UNE DEMARCHE -->
+
+        <section id="zone-demarche" class="zone-cachee">
+
+            <h2>Pour quelle demarche avez-vous besoin d'aide ?</h2>
+
+            <div class="choix-secondaires">
+
+                <button data-demarche="etat-civil">
+                    Etat civil
+                </button>
+
+                <button data-demarche="famille">
+                    Famille et ecole
+                </button>
+
+                <button data-demarche="urbanisme">
+                    Logement et urbanisme
+                </button>
+
+                <button data-demarche="solidarite">
+                    Aides et solidarite
+                </button>
+
+                <button data-demarche="autre">
+                    Je ne sais pas
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPRENDRE -->
+
+        <section id="zone-apprendre" class="zone-cachee">
+
+            <h2>Que souhaitez-vous apprendre ?</h2>
+
+            <div class="choix-secondaires">
+
+                <button data-apprendre="internet">
+                    Utiliser Internet
+                </button>
+
+                <button data-apprendre="ordinateur">
+                    Utiliser un ordinateur
+                </button>
+
+                <button data-apprendre="smartphone">
+                    Utiliser un smartphone
+                </button>
+
+                <button data-apprendre="email">
+                    Envoyer un e-mail
+                </button>
+
+                <button data-apprendre="securite">
+                    Se proteger sur Internet
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIGNALER -->
+
+
+        <section id="zone-signaler" class="zone-cachee">
+
+            <h2>Quel probleme souhaitez-vous signaler ?</h2>
+
+            <div class="choix-secondaires">
+
+                <button data-signaler="eclairage">
+                    Eclairage
+                </button>
+
+                <button data-signaler="voirie">
+                    Route ou trottoir
+                </button>
+
+                <button data-signaler="proprete">
+                    Proprete
+                </button>
+
+                <button data-signaler="espace-vert">
+                    Espace vert
+                </button>
+
+                <button data-signaler="autre">
+                    Autre probleme
+                </button>
+
+            </div>
+
+
+            <!-- FORMULAIRE DE SIGNALEMENT -->
+
+            <div id="formulaire-signalement" class="zone-cachee">
+
+                <h3 id="type-signalement"></h3>
+
+                <form id="form-signalement">
+
+                    <label for="lieu-signalement">
+                        Ou se trouve le probleme ?
+                    </label>
+
+                    <input type="text" id="lieu-signalement" placeholder="Exemple : rue, parc, batiment..." required>
+
+
+                    <label for="description-signalement">
+                        Decrivez le probleme en quelques mots
+                    </label>
+
+                    <textarea id="description-signalement" rows="5" placeholder="Decrivez ce que vous avez constate..."
+                        required></textarea>
+
+
+                    <label for="photo-signalement">
+                        Ajouter une photo (facultatif)
+                    </label>
+
+                    <input type="file" id="photo-signalement" accept="image/*">
+
+
+                    <button type="submit" class="bouton-envoyer">
+                        Envoyer le signalement
+                    </button>
+
+                </form>
+
+
+                <div id="confirmation-signalement" class="zone-cachee">
+
+                    <h3>Signalement prepare</h3>
+
+                    <p>
+                        Ceci est un prototype.
+                        Aucune information n'a ete transmise a la mairie.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ZONE DE REPONSE COMMUNE -->
+
+        <section id="zone-reponse" class="zone-cachee">
+
+            <h2 id="titre-reponse"></h2>
+
+            <div id="texte-reponse"></div>
+
+            <div class="actions-reponse">
+
+                <button id="probleme-resolu" class="bouton-resolu">
+                    Mon probleme est resolu
+                </button>
+
+                <button id="besoin-aide" class="bouton-besoin-aide">
+                    J'ai toujours besoin d'aide
+                </button>
+
+                <button id="fermer-reponse" class="bouton-retour">
+                    Retour
+                </button>
+
+            </div>
+
+
+            <div id="message-resolu" class="zone-cachee">
+
+                <p>
+                    Parfait. Vous pouvez revenir a l'accueil si vous avez un autre besoin.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORIENTATION -->
+
+        <section>
+
+            <h2>Vous ne savez pas ou aller ?</h2>
+
+            <p>
+                Ce n'est pas grave. Nous pouvons vous aider a choisir.
+            </p>
+
+            <button id="orientation" class="bouton-aide">
+                Aidez-moi a trouver
+            </button>
+
+            <div id="zone-orientation" class="zone-cachee">
+
+                <h3>Votre besoin concerne quoi ?</h3>
+
+                <div class="choix-orientation">
+
+                    <button id="orientation-numerique">
+                        Un appareil ou Internet
+                    </button>
+
+                    <button id="orientation-demarche">
+                        Une demarche administrative
+                    </button>
+
+                    <button id="orientation-ville">
+                        Un probleme dans Pace
+                    </button>
+
+                    <button id="orientation-apprendre">
+                        Je veux apprendre
+                    </button>
+
+                </div>
+
+                <p>
+                    Vous ne trouvez toujours pas ?
+                </p>
+
+                <button id="orientation-humain">
+                    Demander de l'aide
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- AIDE HUMAINE -->
+
+        <section class="aide-humaine">
+
+            <h2>Besoin d'une aide humaine ?</h2>
+
+            <p>
+                Vous n'arrivez pas a trouver la solution ?
+                Une personne peut vous accompagner.
+            </p>
+
+            <button id="aide-humaine">
+                Trouver de l'aide
+            </button>
+
+            <div id="zone-aide-humaine" class="zone-cachee">
+
+                <p class="message-aide">
+                    Cette zone pourra contenir les coordonnees,
+                    horaires et lieux d'accompagnement disponibles a Pace.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Prototype etudiant - Service non officiel
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>

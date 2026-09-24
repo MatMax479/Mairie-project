@@ -1,0 +1,439 @@
+/* PAGE GENERALE */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f7f8;
+    color: #333333;
+}
+
+
+/* EN-TETE */
+
+header {
+    background-color: #1D5F8A;
+    padding: 35px 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 42px;
+    margin: 0 0 10px 0;
+}
+
+header p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+/* CONTENU PRINCIPAL */
+
+main {
+    padding: 10px;
+}
+
+section {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* BOUTONS */
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    padding: 18px 25px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background-color: white;
+    border: 2px solid #1D5F8A;
+    color: #1D5F8A;
+}
+
+button:hover {
+    background-color: #1D5F8A;
+    color: white;
+}
+
+
+/* 4 BOUTONS PRINCIPAUX */
+
+.boutons-principaux {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.boutons-principaux button {
+    width: 100%;
+    min-height: 110px;
+
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+
+/* BOUTONS DES SOUS-MENUS */
+
+.choix-secondaires {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    max-width: 800px;
+    margin: auto;
+}
+
+.choix-secondaires button {
+    min-width: 220px;
+    min-height: 70px;
+}
+
+
+/* ZONE DE REPONSE */
+
+#zone-reponse {
+    border-left: 6px solid #1D5F8A;
+}
+
+#zone-reponse h2 {
+    color: #1D5F8A;
+}
+
+#texte-reponse {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+#texte-reponse p {
+    margin: 15px 0;
+}
+
+
+/* BOUTON FERMER */
+
+.bouton-retour {
+    margin-top: 25px;
+
+    background-color: #1D5F8A;
+    color: white;
+}
+
+.bouton-retour:hover {
+    background-color: white;
+    color: #1D5F8A;
+}
+
+
+/* AIDEZ-MOI A TROUVER */
+
+.bouton-aide {
+    background-color: #1D5F8A;
+    color: white;
+
+    font-size: 21px;
+
+    padding: 20px 40px;
+    min-width: 300px;
+}
+
+.bouton-aide:hover {
+    background-color: white;
+    color: #1D5F8A;
+}
+
+
+/* AIDE HUMAINE */
+
+.aide-humaine {
+    border: 2px solid #1D5F8A;
+}
+
+.aide-humaine h2 {
+    color: #1D5F8A;
+}
+
+
+/* MESSAGES D'AIDE */
+
+.message-aide {
+    max-width: 650px;
+
+    margin: 25px auto 0 auto;
+    padding: 20px;
+
+    background-color: #f5f7f8;
+
+    border-radius: 8px;
+}
+
+
+/* ELEMENTS CACHES */
+
+.zone-cachee {
+    display: none;
+}
+
+
+/* PIED DE PAGE */
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+
+    background-color: #333333;
+}
+
+footer p {
+    color: white;
+
+    font-size: 14px;
+
+    margin: 0;
+}
+
+.bouton-accueil {
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    background-color: white;
+    color: #1D5F8A;
+
+    border: 2px solid white;
+}
+
+.bouton-accueil:hover {
+    background-color: #1D5F8A;
+    color: white;
+}
+
+.actions-reponse {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.bouton-resolu {
+    background-color: #26734D;
+    border-color: #26734D;
+    color: white;
+}
+
+
+.bouton-resolu:hover {
+    background-color: white;
+    color: #26734D;
+}
+
+
+.bouton-besoin-aide {
+    background-color: #1D5F8A;
+    color: white;
+}
+
+
+#message-resolu {
+    margin-top: 25px;
+    padding: 20px;
+
+    background-color: #f5f7f8;
+
+    border-radius: 8px;
+}
+
+.choix-orientation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.choix-orientation button {
+    min-height: 80px;
+    margin: 0;
+}
+
+#formulaire-signalement {
+    margin-top: 30px;
+    padding-top: 25px;
+
+    border-top: 2px solid #eeeeee;
+}
+
+
+#form-signalement {
+    max-width: 650px;
+    margin: auto;
+
+    text-align: left;
+}
+
+
+#form-signalement label {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#form-signalement input[type="text"],
+#form-signalement textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+}
+
+
+#form-signalement input[type="file"] {
+    display: block;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+}
+
+
+.bouton-envoyer {
+    display: block;
+
+    margin: 30px auto 0 auto;
+
+    background-color: #1D5F8A;
+    color: white;
+
+    font-weight: bold;
+}
+
+
+#confirmation-signalement {
+    max-width: 650px;
+
+    margin: 30px auto 0 auto;
+    padding: 20px;
+
+    background-color: #f5f7f8;
+
+    border-radius: 8px;
+}
+
+
+/* VERSION TELEPHONE */
+
+@media (max-width: 600px) {
+
+    .choix-orientation {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+
+    /* Les 4 boutons passent sur une colonne */
+
+    .boutons-principaux {
+        grid-template-columns: 1fr;
+    }
+
+    .boutons-principaux button {
+        min-height: 90px;
+    }
+
+
+    /* Les sous-menus passent aussi sur une colonne */
+
+    .choix-secondaires {
+        flex-direction: column;
+    }
+
+    .choix-secondaires button {
+        width: 100%;
+        min-width: 0;
+
+        margin: 5px 0;
+    }
+
+
+    button {
+        font-size: 18px;
+    }
+
+
+    .bouton-aide {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    #texte-reponse {
+        text-align: left;
+    }
+}
